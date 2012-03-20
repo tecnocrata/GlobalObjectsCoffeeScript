@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>@ViewBag.Message</h2>
+<p>
+    To learn more about ASP.NET MVC visit <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
+    <br/>
+    <input type="button" id="btnDemo" value="Click me!"/>
+</p>
+
+<script type="text/javascript">
+
+    $("#btnDemo").click(function () {
+        var gm = new Framework2.GlobalMessage();
+        gm.say_hello();
+    });
+</script>
